@@ -6,4 +6,4 @@ before_install:
   - docker build -t shoko/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run shoko/docker-react npm run test -- --coverage
+  - docker run shoko/docker-react npm run test -- --coverage --watchAll=false
